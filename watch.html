@@ -219,7 +219,7 @@
             alt="channel avatar">
           <div class="channel-info-meta">
             <h4>
-              <a href="/channel.html?id="{{ video.User.id }}">{{ video.User.username }}</a>
+              <a href="/channel.html?id={{ video.User.id }}">{{ video.User.username }}</a>
             </h4>
             <span class="secondary small">{{ video.subscribersCount }} subscribers</span>
           </div>
@@ -235,7 +235,7 @@
   <!-- 右侧推荐视频模板 -->
   <script id="tplRelatedVideos" type="text/html">
     <h3 style="margin-bottom: 1rem">Up Next</h3>
-
+    
     {{ each videos }}
     <a href="/watch.html?id={{ $value.id }}">
       <div class="sc-fzozJi dteCCc">
@@ -296,9 +296,9 @@
   <script src="./lib/dayjs/plugin/relativeTime.js"></script>
   <script src="./lib/art-template/template-web.js"></script>
 
-  <script src="./scripts/http.js"></script>
-  <script src="./scripts/utils.js"></script>
-  <script src="./scripts/watch.js"></script>
+  <script src="./js/http.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/watch.js"></script>
 </body>
 
 </html>
